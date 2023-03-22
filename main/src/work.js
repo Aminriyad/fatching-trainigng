@@ -1,4 +1,4 @@
-import amin from "./amin.js"
+import source from "./amin.js"
 import "./aminer.css"
 const Work = () => {
     let x = document.getElementById("amin")
@@ -14,14 +14,14 @@ const Work = () => {
       <button>button</button>
       </form>
       <div className={"aminer"}>
-      {amin.map((amin) => {
+      {source.map((x) => {
         return(
-      <div key={amin.id}>
-          <h4>{amin.brand}</h4>
-          <b>{amin.name}</b>
-          <b>"{amin.price}"</b>
-          {amin.rating && <p>rating : {amin.rating}</p>}
-          <img src={amin.image_link} alt="" style={{height:"auto",width:"100px"}}/>
+      <div key={x.id}>
+          <h4>{x.brand}</h4>
+          <b>{x.name}</b>
+          <b>"{x.price}"</b>
+          {x.rating && <p>rating : {x.rating}</p>}
+          <img src={x.image_link} alt="" style={{height:"auto",width:"100px"}}/>
         </div>)})}
     </div>
     </div>

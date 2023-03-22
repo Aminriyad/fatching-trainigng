@@ -5,17 +5,18 @@ h2{
 form{
     display:grid;
     justify-content:center ;
-    
     margin:20px 0;
 }
 .aminer{
+justify-content:center;
 display: grid;
-grid-template-columns: repeat(5,1fr);
+grid-template-columns: repeat(auto-fill,200px);
 grid-auto-rows: minmax(150px,auto);
 grid-gap: 10px;
 }
 .aminer>*{
     border: solid 1px red;
+    max-width: 200px;
 }
 .aminer >* >*{
     margin: 0;

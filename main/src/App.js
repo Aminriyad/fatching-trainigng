@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
 import Register from './pages/Register'
+import Work from './work';
+//import data from "./amin"
 function App() {
   return (
-    <Register/>
+    <Work></Work>
   );
 }
 

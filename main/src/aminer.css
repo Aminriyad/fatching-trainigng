@@ -1,0 +1,24 @@
+h2{
+    display:grid;
+    justify-content:center ;
+}
+form{
+    display:grid;
+    justify-content:center ;
+    
+    margin:20px 0;
+}
+.aminer{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-auto-rows: minmax(150px,auto);
+grid-gap: 10px;
+}
+.aminer>*{
+    border: solid 1px red;
+}
+.aminer >* >*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
